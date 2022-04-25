@@ -4,6 +4,7 @@
 
 body {
   background: #0B2434;
+  font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 1.25rem;
 }
@@ -14,7 +15,6 @@ main {
   border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
-  font-family: 'Karla', sans-serif;
   height: 20rem;
   justify-content: center;
   margin: 0 auto;
@@ -25,6 +25,19 @@ main {
   color: #2B283A;
   font-size: 1.625rem;
   letter-spacing: -0.03em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.game--instructions {
+  color: #4A4E74;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.1072px;
+  letter-spacing: -0.03em;
+  max-width: 14.5rem;
+  margin-bottom: 1.625rem;
+  margin-top: 0.1rem;
+  text-align: center;
 }
 
 .die {
@@ -39,9 +52,35 @@ main {
   background: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   display: flex;
   font-size: 1.25rem;
   height: 2.25rem;
   justify-content: center;
   width: 2.25rem;
+}
+
+.dice--held {
+  background-color: #59E391;
+}
+
+.roll-dice {
+  background-color: #5035FF;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
+  height: 2.25rem;
+  margin-top: 1.625rem;
+  width: 8rem;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
